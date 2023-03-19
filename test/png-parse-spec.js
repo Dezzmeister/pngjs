@@ -2,7 +2,7 @@ let test = require("tape");
 let fs = require("fs");
 let path = require("path");
 let PNG = require("../lib/png").PNG;
-let stream = require("stream");
+let stream = require("stream-browserify");
 
 function parseFile(filename, cb) {
   fs.createReadStream(path.join(__dirname, "png-parse-data", filename))
